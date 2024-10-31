@@ -244,7 +244,7 @@ EXPOSE $VNC_PORT \
        $UPLOAD_PORT \
        $AUDIO_PORT
 WORKDIR $HOME
-RUN echo 'candidate:123456' | sudo chpasswd
+RUN echo 'candidate:123456' | sudo chpasswd && echo "candidate ALL=(ALL) NOPASSWD: ALL" >>/etc/sudoers
 USER candidate
 
 
