@@ -248,5 +248,5 @@ RUN echo 'candidate:123456' | sudo chpasswd && echo "candidate ALL=(ALL) NOPASSW
 USER candidate
 
 
-ENTRYPOINT ["/dockerstartup/vnc_startup.sh", "/dockerstartup/kasm_startup.sh"]
+ENTRYPOINT ["/dockerstartup/vnc_startup.x", "/dockerstartup/kasm_startup.sh"]
 CMD ["--wait"]
