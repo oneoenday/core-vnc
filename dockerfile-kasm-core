@@ -244,7 +244,10 @@ EXPOSE $VNC_PORT \
        $UPLOAD_PORT \
        $AUDIO_PORT
 WORKDIR $HOME
+<<<<<<< HEAD
 RUN echo 'candidate:123456' | sudo chpasswd
+=======
+>>>>>>> a82846d6676acfbe8189a96cf3d5feada38c8698
 USER candidate
 
 ENTRYPOINT ["/dockerstartup/vnc_startup.sh", "/dockerstartup/kasm_startup.sh"]
